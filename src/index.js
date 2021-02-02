@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Card from './Card';
 import Hello from './Hello';
+import MoodTracker from './MoodTracker';
 import Post from './Post';
 import reportWebVitals from './reportWebVitals';
 
@@ -14,8 +16,10 @@ const post = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Hello name="Kimber" age={29}/>
+    <MoodTracker/>
+    <Hello name={"Kimber"} age={29}/>
     <Post post={post}/>
+    <Card/>
   </React.StrictMode>,
   document.getElementById('root')
 );
