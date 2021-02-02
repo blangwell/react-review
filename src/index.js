@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Hello from './Hello';
+import Post from './Post';
 import reportWebVitals from './reportWebVitals';
+
+const post = {
+  title: "Are lanterns gay?",
+  author: "JK Rowling",
+  body: "Yes, yes as a matter of fact they are indeed.",
+  comments: ["wow, so brave", "yass gaga", "liberal media at its finest"]
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Hello name="Kimber" age={29}/>
+    <Post post={post}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
